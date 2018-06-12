@@ -28,6 +28,16 @@ Route::post('/create/post', 'PostController@store');
 Router::routeVoid();
 ```
 
+## Don't forget to enable redirecting all requests to index.php. Here is one example:
+
+```
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-l
+RewriteRule .* index.php [L,QSA]
+```
+
 ## Usage
 Connect the necessary classes for the router BulveyzRouter\Route and BulveyzRouter\Router can be connected separately (if you use singleton), but BulveyzRouter\Route must be called and routes must be defined before BulveyzRouter\Router::routeVoid();
 And don't forget to call BulveyzRouter\Router::routeVoid(); before defained routes.
@@ -135,15 +145,5 @@ Route::get('/user', function (){
     // Return handler this route
     var_dump(Router::$callback);
 });
-```
-
-## Dont forget create .htaccess
-
-```
-RewriteEngine On
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_FILENAME} !-l
-RewriteRule .* index.php [L,QSA]
 ```
 
