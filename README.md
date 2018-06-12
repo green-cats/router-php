@@ -17,7 +17,7 @@ Route::get('/home', function() {
 });
 
 
-Route::get('/user/{id}', function($param) {
+Route::any('/user/{id}', function($param) {
   echo "User" . $param->id;
 });
 
