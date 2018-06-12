@@ -1,4 +1,4 @@
-# routerPHP
+# BulveyzRouter
 Very simple but functional router. It will be useful for simple projects, will help to quickly implement the routing system, as it is very easy and fast, you can use it both separately and in conjunction with other classes or patterns
 
 #### Install via composer 
