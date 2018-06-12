@@ -13,14 +13,14 @@ class Route extends RouteCollection
      * @var
      * Содержит имя маршрута
      */
-    public static $setName;
+    private static $setName;
 
 
     /**
      * @var
      * Содержит метод маршрута
      */
-    public static $method;
+    private static $method;
 
     /**
      * @param $route

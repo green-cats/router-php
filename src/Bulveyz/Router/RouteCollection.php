@@ -36,7 +36,7 @@ abstract class RouteCollection
      *
      * Добавляет новыймаршрут в $routes с названием, функциео обработчикм и методом
      */
-    public static function addRoute($route, $callback, $method) {
+    protected static function addRoute($route, $callback, $method) {
         self::$routes[$method][$route] = [
             'route' => $route,
             'method' => $method,
