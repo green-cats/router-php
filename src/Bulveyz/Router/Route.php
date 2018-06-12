@@ -61,22 +61,6 @@ class Route extends RouteCollection
         return new static();
     }
 
-    public static function put($route, $callback = null)
-    {
-        self::addRoute($route, $callback, 'PUT');
-        self::$setName = $route;
-        self::$method = 'PUT';
-        return new static();
-    }
-
-    public static function path($route, $callback = null)
-    {
-        self::addRoute($route, $callback, 'PATH');
-        self::$setName = $route;
-        self::$method = 'PATH';
-        return new static();
-    }
-
     /**
      * @return array
      * Возвращает массив маршрутов

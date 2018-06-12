@@ -20,8 +20,6 @@ abstract class RouteCollection
         "GET" => [],
         "POST" => [],
         "ANY" => [],
-        "PUT" => [],
-        "PATH" => [],
         "All" => []
     ];
 

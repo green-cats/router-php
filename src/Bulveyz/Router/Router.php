@@ -132,13 +132,7 @@ class Router
          if (self::$route) {
              if (self::$method  === 'ANY') {
                  return false;
-             } elseif (self::$method  === 'PATH') {
-                 return false;
-             }
-             elseif (self::$method  === 'PUT') {
-                 return false;
-             }
-             elseif (self::$method != $_SERVER['REQUEST_METHOD']) {
+             } elseif (self::$method != $_SERVER['REQUEST_METHOD']) {
                  return exit('Method not allowed');
              }
          } else {
