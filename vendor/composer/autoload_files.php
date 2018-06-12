@@ -6,5 +6,5 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    '2b2c38c2269abdb887a98e465732ccd6' => $baseDir . '/src/Bulveyz/helpers.php',
+    '72d2bbba1493aa3db070a24aaacf174f' => $baseDir . '/src/Bulveyz/helpers.php',
 );
