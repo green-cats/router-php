@@ -1,0 +1,20 @@
+{
+    "name": "bulveyz/routerPHP",
+    "description": "Simple router for light projects PHP",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+      {
+        "name": "Bulveyz",
+        "email": "rus131354@icloud.com"
+      }
+    ],
+    "autoload": {
+      "files": [
+        "src/Bulveyz/helpers.php"
+      ],
+      "psr-4": {
+        "BulveyzRouter\\": "src/Bulveyz/Router/"
+      }
+    }
+}
