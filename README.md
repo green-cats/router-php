@@ -6,6 +6,8 @@ Very simple but functional router. It will be useful for simple projects, will h
 composer require bulveyz/router-php
 ```
 
+### [Documentation](https://bulveyz.github.io/router-php/)
+
 ## Example of use
 ```php
 use BulveyzRouter\Route;
