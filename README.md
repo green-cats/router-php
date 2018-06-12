@@ -28,7 +28,7 @@ Route::post('/create/post', 'PostController@store');
 Router::routeVoid();
 ```
 
-## Don't forget to enable redirecting all requests to index.php. Here is one example:
+## Don't forget to enable redirecting all requests to index.php in .htaccess. Here is one example:
 
 ```
 RewriteEngine On
