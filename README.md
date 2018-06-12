@@ -29,8 +29,8 @@ Router::routeVoid();
 ```
 
 ## Usage
-Connect the necessary classes for the router BulveyzRouter\Route and BulveyzRouter\Router can be connected separately (if you use singleton), but BulveyzRouter\Route must be called and routers must be defined before BulveyzRouter\Router::routeVoid();
-And don't forget to call BulveyzRouter\Router::routeVoid(); before dfained routes.
+Connect the necessary classes for the router BulveyzRouter\Route and BulveyzRouter\Router can be connected separately (if you use singleton), but BulveyzRouter\Route must be called and routes must be defined before BulveyzRouter\Router::routeVoid();
+And don't forget to call BulveyzRouter\Router::routeVoid(); before defained routes.
 
 ### Example
 #### index.php
@@ -57,7 +57,7 @@ Route::get('/home', function() {
 ```
 
 ## Patterns for route
-The patterns for the route are specified as {pattern}. The route should not have the same parameters, they should have different names.
+The parameters for the route are specified as {pattern}. The route should not have the same parameters, they should have different names.
 
 ### Examples
 ```php
@@ -101,6 +101,8 @@ Of course, you can change the namespace for controllers, by default it is App\ .
 ### Example
 ```php
 Route::setNamespace('Your namespace');
+
+
 "Route::setNamespace('Classes);"
 ```
 
