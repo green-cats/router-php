@@ -3,7 +3,7 @@ Very simple but functional router. It will be useful for simple projects, will h
 
 #### Install via composer 
 ```
-composer require bulveyz/router-php "1.0"
+composer require bulveyz/router-php
 ```
 
 ## Example of use
