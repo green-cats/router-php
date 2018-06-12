@@ -29,7 +29,8 @@ Router::routeVoid();
 ```
 
 ## Usage
-Connect the necessary classes for the router. BulveyzRouter\Route and BulveyzRouter\Router can be connected separately (if you use singleton), but BulveyzRouter\Route must be called and routers must be defined before BulveyzRouter\Router:: routeVoid();
+Connect the necessary classes for the router BulveyzRouter\Route and BulveyzRouter\Router can be connected separately (if you use singleton), but BulveyzRouter\Route must be called and routers must be defined before BulveyzRouter\Router::routeVoid();
+And don't forget to call BulveyzRouter\Router::routeVoid(); before deefained routed.
 
 ### Example
 #### index.php
@@ -77,14 +78,14 @@ public function index($params)
 ```
 
 ## Methods
-This version supports only 3 methods
+This version supports only 3 methods:
 
 * GET
 * POST
 * ANY 
 
 ## Set name for route
-You can specify the name of the router and return it anywhere
+You can specify the name of the router and return it anywhere.
 
 ### Example
 ```php
@@ -95,7 +96,7 @@ echo \route('home.index');
 ```
 
 ## Change nampespace for controllers
-Of course, you can change the namespace for controllers, by default it is App\
+Of course, you can change the namespace for controllers, by default it is App\ .
 
 ### Example
 ```php
