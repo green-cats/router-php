@@ -103,7 +103,7 @@ Of course, you can change the namespace for controllers, by default it is App\ .
 Route::setNamespace('Your namespace');
 
 
-"Route::setNamespace('Classes);"
+"Route::setNamespace('Classes');"
 ```
 
 ## Output all defained routes and other data
