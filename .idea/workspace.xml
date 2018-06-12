@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="906f1075-4083-49a3-a225-707f4cf16b18" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/Bulveyz/Router/Route.php" afterPath="$PROJECT_DIR$/src/Bulveyz/Router/Route.php" />
-      <change beforePath="$PROJECT_DIR$/src/Bulveyz/Router/RouteCollection.php" afterPath="$PROJECT_DIR$/src/Bulveyz/Router/RouteCollection.php" />
-      <change beforePath="$PROJECT_DIR$/src/Bulveyz/Router/Router.php" afterPath="$PROJECT_DIR$/src/Bulveyz/Router/Router.php" />
+      <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -59,12 +57,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Router.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Router.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Bulveyz/Router/Router.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="427">
-              <caret line="136" column="14" lean-forward="true" selection-start-line="136" selection-start-column="14" selection-end-line="136" selection-end-column="14" />
+            <state relative-caret-position="126">
+              <caret line="82" column="36" lean-forward="false" selection-start-line="82" selection-start-column="27" selection-end-line="82" selection-end-column="36" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="333">
+                <caret line="25" column="3" lean-forward="true" selection-start-line="25" selection-start-column="3" selection-end-line="25" selection-end-column="3" />
+                <folding />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -91,6 +102,7 @@
         <option value="$PROJECT_DIR$/src/Bulveyz/Router/RouteCollection.php" />
         <option value="$PROJECT_DIR$/src/Bulveyz/Router/Route.php" />
         <option value="$PROJECT_DIR$/src/Bulveyz/Router/Router.php" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -212,12 +224,12 @@
       <option name="presentableId" value="Default" />
       <updated>1528740065714</updated>
       <workItem from="1528740066991" duration="3912000" />
-      <workItem from="1528776315047" duration="19337000" />
+      <workItem from="1528776315047" duration="20209000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23249000" />
+    <option name="totallyTimeSpent" value="24121000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -363,9 +375,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Bulveyz/Router/Router.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="427">
-          <caret line="136" column="14" lean-forward="true" selection-start-line="136" selection-start-column="14" selection-end-line="136" selection-end-column="14" />
+        <state relative-caret-position="126">
+          <caret line="82" column="36" lean-forward="false" selection-start-line="82" selection-start-column="27" selection-end-line="82" selection-end-column="36" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="333">
+            <caret line="25" column="3" lean-forward="true" selection-start-line="25" selection-start-column="3" selection-end-line="25" selection-end-column="3" />
+            <folding />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
