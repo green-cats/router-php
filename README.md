@@ -30,7 +30,7 @@ Router::routeVoid();
 
 ## Usage
 Connect the necessary classes for the router BulveyzRouter\Route and BulveyzRouter\Router can be connected separately (if you use singleton), but BulveyzRouter\Route must be called and routers must be defined before BulveyzRouter\Router::routeVoid();
-And don't forget to call BulveyzRouter\Router::routeVoid(); before deefained routes.
+And don't forget to call BulveyzRouter\Router::routeVoid(); before dfained routes.
 
 ### Example
 #### index.php
