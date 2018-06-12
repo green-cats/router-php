@@ -11,6 +11,7 @@ composer require bulveyz/router-php "1.0"
 use BulveyzRouter\Route;
 use BulveyzRouter\Router;
 
+
 Route::get('/home', function() {
 	echo "Home";
 });
@@ -19,6 +20,7 @@ Route::get('/home', function() {
 Route::get('/user/{id}', function($param) {
 	echo "User" . $param->id;
 });
+
 
 Route::post('/create/post', 'PostController@store');
 
