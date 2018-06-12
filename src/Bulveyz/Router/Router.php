@@ -57,9 +57,9 @@ class Router
      * Вычислияет и сравнивает маршруты с текущим, если маршрут найден
      * то вызовет свойства выше и поместит данные из массива в них
      */
-    private static function routeMath()
+    private static function routeMath($method)
     {
-        foreach (self::$routes['All'] as $route)
+        foreach (self::$routes[$method] as $route)
         {
             $pattern = preg_replace("/\{(.*?)\}/", "(?P<$1>[\w-]+)", $route['route']);
             $pattern = "#^". trim($pattern, '/') ."$#";
@@ -86,14 +86,26 @@ class Router
         self::$namespace = RouteCollection::getNamespace();
         self::$url = rtrim(parse_url($_SERVER['REQUEST_URI'])['path'], '/');
 
-        self::routeMath();
+        self::routeMath($_SERVER['REQUEST_METHOD']);
 
-        self::checkMethod();
+        if (self::$route) {
+            self::checkMethod();
 
-        if (is_callable(self::$callback)) {
-            call_user_func(self::$callback, (object) self::$params);
+            if (is_callable(self::$callback)) {
+                call_user_func(self::$callback, (object) self::$params);
+            } else {
+                self::controllerConnect(self::$callback);
+            }
         } else {
-            self::controllerConnect(self::$callback);
+            self::routeMath('ANY');
+
+            self::checkMethod();
+
+            if (is_callable(self::$callback)) {
+                call_user_func(self::$callback, (object) self::$params);
+            } else {
+                self::controllerConnect(self::$callback);
+            }
         }
    }
 
@@ -136,6 +148,7 @@ class Router
                  return exit('Method not allowed');
              }
          } else {
+
              return exit('Route not found');
          }
    }
