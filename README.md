@@ -104,7 +104,7 @@ You can specify the name of the router and return it anywhere.
 Route::get('/home', 'HomeController@index')->name('home.index');
 
 
-echo \route('home.index');
+echo \route('home.index'); // return '/home'
 ```
 
 ## Change nampespace for controllers
