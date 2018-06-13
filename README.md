@@ -1,5 +1,5 @@
 # BulveyzRouter
-Very simple but functional router. It will be useful for simple projects, will help to quickly implement the routing system, as it is very easy and fast, you can use it both separately and in conjunction with other classes or patterns
+Very basic but functional router. It will be useful for simple projects, will help to implement the routing system quickly, as it is very easy and fast, you can use it both separately and in conjunction with other classes or patterns.
 
 #### Install via composer 
 ```
@@ -42,7 +42,7 @@ RewriteRule .* index.php [L,QSA]
 
 ## Usage
 Connect the necessary classes for the router BulveyzRouter\Route and BulveyzRouter\Router can be connected separately (if you use singleton), but BulveyzRouter\Route must be called and routes must be defined before BulveyzRouter\Router::routeVoid();
-And don't forget to call BulveyzRouter\Router::routeVoid(); before defained routes.
+And don't forget to call BulveyzRouter\Router::routeVoid(); before defined routes.
 
 ### Example
 #### index.php
